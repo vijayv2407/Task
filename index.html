@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XYZ Construction</title>
+  <link rel="shortcut icon" href="./Image/logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CSS file -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <header class="sticky-lg-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 ">
+      <div class="container">
+        <div class="logo" data-aos="fade-up">
+          <a class="navbar-brand" href="#"> <img src="./Image/logo.png" alt="" loading="lazy"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto py-3 gap-5 fw-semibold">
+            <li class="nav-item" data-aos="fade-right">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" data-aos="fade-right">
+              <a class="nav-link" href="#section1">About Us</a>
+            </li>
+            <li class="nav-item" data-aos="fade-right">
+              <a class="nav-link" href="#section2">Amenities</a>
+            </li>
+            <li class="nav-item" data-aos="fade-right">
+              <a class="nav-link" href="#section3">Projects</a>
+            </li>
+            <li class="nav-item" data-aos="fade-right">
+              <a class="nav-link" href="#section4">Gallery</a>
+            </li>
+            <li class="nav-item cutommove">
+              <a class="nav-link" href="#">
+                <div class="contactBtn ">
+                  <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Contact Us</span>
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contactBtn cutommove1" data-aos="fade-left">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Contact Us</span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- Landing Page -->
+  <section>
+    <div class="pb-5">
+      <div class="landingpage card text-bg-dark rounded-0 border-0">
+        <img src="./Image/landingimageOne.png" class="card-img" alt="..." loading="lazy">
+        <div class=" card-img-overlay container">
+          <div class="row">
+            <div class="col-lg-8 my-5">
+              <div class="landingpageText">
+                <p data-aos="flip-right">XYZ Construction</p>
+                <h5 class="card-title display-5 py-3" data-aos="fade-left">“Transforming Blueprints into Reality”</h5>
+                <p class="card-text w-75" data-aos="fade-up" data-aos-duration="1000">Witness the journey of your
+                  project. We construct Villas,
+                  Bungalows,
+                  Apartments, Office Space, Retail Spaces, Schools, Hospitals and many more. From
+                  skyscrapers to
+                  homes, we build dreams that endure.</p>
+                <div class="landingpageBtn d-flex gap-4 py-3">
+                  <button class="btn btn-outline-light px-3" data-aos="fade-left">
+                    Contact Us
+                  </button>
+                  <button class="btn btn-light px-3" data-aos="fade-left">
+                    Get Quote
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4">
+              <div class="contectFrom" data-aos="fade-up-right">
+                <form class="form">
+                  <p class="title" data-aos="flip-left">We're Here to Listen</p>
+                  <div class="flex">
+                    <label>
+                      <input required="" placeholder="" type="text" class="input">
+                      <span>Firstname</span>
+                    </label>
+
+                    <label>
+                      <input required="" placeholder="" type="text" class="input">
+                      <span>Lastname</span>
+                    </label>
+                  </div>
+
+                  <label>
+                    <input required="" placeholder="" type="number" class="input">
+                    <span>Phone Number</span>
+                  </label>
+
+                  <label>
+                    <input required="" placeholder="" type="email" class="input">
+                    <span>Email</span>
+                  </label>
+
+
+                  <label>
+                    <input required="" placeholder="" type="text" class="input py-5">
+                    <span>Type your query</span>
+                  </label>
+                  <button class="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- About Us -->
+  <section id="section1">
+    <div class="my-4 py-3 text-center">
+      <div class="allheading">
+        <h3>Welcome to</h3>
+      </div>
+
+      <div class="aboutLogo py-5" data-aos="zoom-in-up">
+        <img src="./Image/logo.png" alt="" loading="lazy">
+      </div>
+      <h1 style="color: #2F3388;" data-aos="zoom-in-right">XYZ Construction</h1>
+      <p class="w-75 mx-auto py-3" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Minima accusamus nobis
+        quae sunt sed mollitia recusandae placeat, nemo cupiditate. Accusantium, voluptatum quia possimus dicta
+        porro placeat. Soluta voluptatum beatae numquam in doloribus qui atque? Est assumenda perspiciatis eaque
+        quidem autem reiciendis sit repellendus nisi alias fugiat, ab beatae itaque incidunt? Nihil est optio a
+        at doloremque sapiente quidem, sit animi!A</p>
+    </div>
+    <div class="aboutBtn text-center py-3" data-aos="fade-up-right">
+      <button class="cta">
+        <span>Know more</span>
+        <svg width="15px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+
+    </div>
+  </section>
+  <!-- Amenities -->
+  <section id="section2">
+    <div class="container my-5 px-3">
+      <div class="allheading text-center my-3 py-3" data-aos="fade-right">
+        <h3>Our Expertise</h3>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col col-md-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./Image/card1.png" class="img-fluid rounded-start" alt="..." loading="lazy">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title pt-5" style="color: #2F3388;" data-aos="fade-left">Residential Construction</h5>
+                  <p class="card-text" data-aos="fade-down">From charming bungalows to sleek apartments, we build dream
+                    homes that fit your family's needs and lifestyle. We offer Approval, 2D Plans,
+                    3D Plans, Elevation, Structural plan, Walkthrough</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./Image/card4.png" class="img-fluid rounded-start" alt="..." loading="lazy">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title pt-5" style="color: #2F3388;" data-aos="fade-left">Commercial Construction</h5>
+                  <p class="card-text" data-aos="fade-down">We bring your vision to life, whether it's a bustling office
+                    complex, a trendy retail space, or a state-of-the-art healthcare facility. We
+                    offer Approval, 2D Plans, 3D Plans, Elevation, Structural plan, Walkthrough</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./Image/card2.png" class="img-fluid rounded-start" alt="..." loading="lazy">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title pt-5" style="color: #2F3388;" data-aos="fade-left">Interior Construction</h5>
+                  <p class="card-text" data-aos="fade-down">From charming bungalows to sleek apartments, we build dream
+                    homes that fit your family's needs and lifestyle. We offer Approval, 2D Plans,
+                    3D Plans, Elevation, Structural plan, Walkthrough</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./Image/card3.png" class="img-fluid rounded-start" alt="..." loading="lazy">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title pt-5" style="color: #2F3388;" data-aos="fade-left">Real Estate Promoters</h5>
+                  <p class="card-text" data-aos="fade-down">Your one-stop solution for turning dreams into tangible
+                    realities. We're a team of very passionate professionals dedicated to guiding
+                    you through each & every step of your real estate journey.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="iconAmenities row mx-auto gap-3">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2 col-3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="500">
+        <img src="./Image/shop.png" alt="" loading="lazy">
+        <div class="icontext">
+          <span>Shoping Mall</span>
+          <h6>5 Minutes</h6>
+        </div>
+      </div>
+      <div class="col-lg-2 col-3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="500">
+        <img src="./Image/downtown.png" alt="" loading="lazy">
+        <div class="icontext">
+          <span>Downtown</span>
+          <h6>7 Minutes</h6>
+        </div>
+      </div>
+      <div class="col-lg-2 col-3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="500">
+        <img src="./Image/plane-train.png" alt="" loading="lazy">
+        <div class="icontext">
+          <span>Railway & Airport</span>
+          <h6>10 Minutes</h6>
+        </div>
+      </div>
+      <div class="col-lg-2 col-2" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="500">
+        <img src="./Image/truck.png" alt="" loading="lazy">
+        <div class="icontext">
+          <span>Medical Center</span>
+          <h6>5 Minutes</h6>
+        </div>
+      </div>
+      <div class="col-lg-2 col-2" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+        data-aos-duration="500">
+        <img src="./Image/college.png" alt="" loading="lazy">
+        <div class="icontext">
+          <span>College/School</span>
+          <h6>5 Minutes</h6>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </section>
+  <!-- Projects -->
+  <section id="section3">
+    <div class="container my-5 py-3">
+      <div class="allheading text-center my-3 py-3">
+        <h3>Our Projects</h3>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./Image/Projects (1).png" style="width: 100%; height: 250px;" class="card-img-top" alt="..."
+              loading="lazy">
+            <div class="card-body" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+              <h6 class="card-title text-center fs-5" style="color: #2F3388;">Tambaram</h6>
+              <p class="card-text text-muted text-center py-3">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae, officiis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Image/Projects (2).png" style="width: 100%; height: 250px;" class="card-img-top" alt="..."
+              loading="lazy">
+            <div class="card-body" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+              <h6 class="card-title text-center fs-5" style="color: #2F3388;">Sholinganallur</h6>
+              <p class="card-text text-muted text-center py-3">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae, officiis.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Image/Projects (3).png" style="width: 100%; height: 250px;" class="card-img-top" alt="..."
+              loading="lazy">
+            <div class="card-body" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+              <h6 class="card-title text-center fs-5" style="color: #2F3388;">Avadi</h6>
+              <p class="card-text text-muted text-center py-3">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae, officiis.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Image/Projects (4).png" style="width: 100%; height: 250px;" class="card-img-top" alt="..."
+              loading="lazy">
+            <div class="card-body" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+              <h6 class="card-title text-center fs-5" style="color: #2F3388;">Varadarajapuram</h6>
+              <p class="card-text text-muted text-center py-3">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae, officiis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Image/Projects (5).png" style="width: 100%; height: 250px;" class="card-img-top" alt="..."
+              loading="lazy">
+            <div class="card-body" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+              <h6 class="card-title text-center fs-5" style="color: #2F3388;">Chengalpattu</h6>
+              <p class="card-text text-muted text-center py-3">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae, officiis.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Image/Projects (6).png" style="width: 100%; height: 250px;" class="card-img-top" alt="..."
+              loading="lazy">
+            <div class="card-body" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+              <h6 class="card-title text-center fs-5" style="color: #2F3388;">Vadapalani</h6>
+              <p class="card-text text-muted text-center py-3">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae, officiis.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery -->
+  <section id="section4">
+    <div class="gallery" id="Gallery">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="maindivgallery d-flex justify-content-around">
+              <div class="subdivgalleryone col-lg-4 col-md-4 col-6">
+                <div class="gallerylist">
+                  <h3>See XYZ Construction<br>Image Gallery</h3>
+                  <div class="maindivgalleryitems row">
+                    <div class="subdivgalleryitemsone col-lg-6 col-md-4 col-6">
+                      <ul>
+                        <li><b>ALL</b></li>
+                        <li>LIVINGROOM</li>
+                        <li>BEDROOM</li>
+                        <li>KITCHEN</li>
+                        <li>GARDEN</li>
+                        <li>BASEMENT</li>
+                      </ul>
+                    </div>
+                    <div class="subdivgalleryitems col-lg-4 col-md-4 col-6">
+                      <div class="gallerypara">
+                        <p>
+                          We stayed in an apartment on Sunset Beach and couldn't be more satisfied. Quiet and safe. It
+                          is
+                          beautifully suited for couples or a family of tour. Your might even see the bears playing on
+                          the
+                          opposite mountains. Housing Security Officers respond to all requests for assistance in
+                          residence halls
+                          and apartments and are dispatched by the Police Dispatch.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="subdivgallerytwo col-lg-4 col-md-4 col-6">
+                <img src="./Image/ALL.png" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="maindivgallery d-flex justify-content-around">
+              <div class="subdivgalleryone col-lg-4 col-md-4 col-6">
+                <div class="gallerylist">
+                  <h3>See XYZ Construction<br>Image Gallery</h3>
+                  <div class="maindivgalleryitems row">
+                    <div class="subdivgalleryitemsone col-lg-4 col-md-4 col-6">
+                      <ul>
+                        <li>ALL</li>
+                        <li><b>LIVINGROOM</b></li>
+                        <li>BEDROOM</li>
+                        <li>KITCHEN</li>
+                        <li>GARDEN</li>
+                        <li>BASEMENT</li>
+                      </ul>
+                    </div>
+                    <div class="subdivgalleryitems col-lg-4 col-md-4 col-6">
+                      <div class="gallerypara">
+                        <p>
+                          Proin sit amet dolor sagittis, blandit erat ac, aliquam elit. Mauris varius magna nisi, id
+                          mollis lacus egestas vel. Praesent eu risus ligula. Nam sed fermentum arcu. Donec bibendum
+                          libero sed neque tristique, at convallis orci volutpat. Sed porttitor a neque sit amet
+                          dignissim.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="subdivgallerytwo col-lg-4 col-md-4 col-6">
+                <img src="./Image/LIVINGROOM.png" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="maindivgallery d-flex justify-content-around">
+              <div class="subdivgalleryone col-lg-4 col-md-4 col-6">
+                <div class="gallerylist">
+                  <h3>See XYZ Construction<br>Image Gallery</h3>
+                  <div class="maindivgalleryitems row">
+                    <div class="subdivgalleryitemsone col-lg-6 col-md-4 col-6">
+                      <ul>
+                        <li>ALL</li>
+                        <li>LIVINGROOM</li>
+                        <li><b>BEDROOM</b></li>
+                        <li>KITCHEN</li>
+                        <li>GARDEN</li>
+                        <li>BASEMENT</li>
+                      </ul>
+                    </div>
+                    <div class="subdivgalleryitems col-lg-4 col-md-4 col-6">
+                      <div class="gallerypara">
+                        <p>
+                          Nam tempor dapibus pellentesque. Cras odio sapien, euismod sed vulputate a, aliquet at sem.
+                          Donec sed ex ac felis congue luctus non et quam. Pellentesque non ante suscipit, posuere lacus
+                          eget, luctus odio. Aenean ultricies dapibus congue. Praesent eget enim lacus. Mauris quam
+                          tellus, fermentum at ligula in, scelerisque cursus lorem.F</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="subdivgallerytwo col-lg-4 col-md-4 col-6">
+                <img src="./Image/BEDROOM.png" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="maindivgallery d-flex justify-content-around">
+              <div class="subdivgalleryone col-lg-4 col-md-4 col-6">
+                <div class="gallerylist">
+                  <h3>See XYZ Construction<br>Image Gallery</h3>
+                  <div class="maindivgalleryitems row">
+                    <div class="subdivgalleryitemsone col-lg-4 col-md-4 col-6">
+                      <ul>
+                        <li>ALL</li>
+                        <li>LIVINGROOM</li>
+                        <li>BEDROOM</li>
+                        <li><b>KITCHEN</b></li>
+                        <li>GARDEN</li>
+                        <li>BASEMENT</li>
+                      </ul>
+                    </div>
+                    <div class="subdivgalleryitems col-lg-4 col-md-4 col-6">
+                      <div class="gallerypara">
+                        <p>
+                          Nam tempor dapibus pellentesque. Cras odio sapien, euismod sed vulputate a, aliquet at sem.
+                          Donec sed ex ac felis congue luctus non et quam. Pellentesque non ante suscipit, posuere lacus
+                          eget, luctus odio. Aenean ultricies dapibus congue. Praesent eget enim lacus. Mauris quam
+                          tellus, fermentum at ligula in, scelerisque cursus lorem.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="subdivgallerytwo col-lg-4 col-md-4 col-6">
+                <img src="./Image/KITCHEN.png" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="maindivgallery d-flex justify-content-around">
+              <div class="subdivgalleryone col-lg-4 col-md-4 col-6">
+                <div class="gallerylist">
+                  <h3>See XYZ Construction<br>Image Gallery</h3>
+                  <div class="maindivgalleryitems">
+                    <div class="subdivgalleryitemsone col-lg-4 col-md-4 col-6">
+                      <ul>
+                        <li>ALL</li>
+                        <li>LIVINGROOM</li>
+                        <li>BEDROOM</li>
+                        <li>KITCHEN</li>
+                        <li><b>GARDEN</b></li>
+                        <li>BASEMENT</li>
+                      </ul>
+                    </div>
+                    <div class="subdivgalleryitems col-lg-4 col-md-4 col-6">
+                      <div class="gallerypara">
+                        <p>
+                          Aliquam sollicitudin enim at velit tempor laoreet. Mauris vel pharetra justo. Maecenas ante
+                          metus, varius in sapien ac, rhoncus bibendum nulla. Etiam diam sem, pellentesque at odio eu,
+                          dignissim venenatis felis. Morbi placerat venenatis lectus, eget cursus metus euismod ac.
+                          Donec
+                          eu mattis orci.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="subdivgallerytwo col-lg-4 col-md-4 col-6">
+                <img src="./Image/GARDEN.png" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="maindivgallery d-flex justify-content-around">
+              <div class="subdivgalleryone col-lg-4 col-md-4">
+                <div class="gallerylist">
+                  <h3>See XYZ Construction<br>Image Gallery</h3>
+                  <div class="maindivgalleryitems row">
+                    <div class="subdivgalleryitemsone col-lg-4 col-md-4 col-6">
+                      <ul>
+                        <li>ALL</li>
+                        <li>LIVINGROOM</li>
+                        <li>BEDROOM</li>
+                        <li>KITCHEN</li>
+                        <li>GARDEN</li>
+                        <li><b>BASEMENT</b></li>
+                      </ul>
+                    </div>
+                    <div class="subdivgalleryitems col-lg-4 col-md-4 col-6">
+                      <div class="gallerypara">
+                        <p>
+                          Sed sed luctus nisl. Donec non tellus porttitor, auctor justo non, fringilla magna. Fusce
+                          vehicula imperdiet erat nec suscipit. Etiam id volutpat magna. Nulla vel ligula eget magna
+                          ultricies ornare. Nulla eu eleifend urna, eget hendrerit massa. Aenean a mi in leo rhoncus
+                          venenatis et quis felis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="subdivgallerytwo col-lg-4 col-md-4 col-6">
+                <img src="./Image/BASEMENT.png" alt="" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <div class="allheading text-center my-5 py-5">
+        <h3 data-aos="fade-up">Our Banking Partners</h3>
+        <p class="w-75 text-muted mx-auto py-5" data-aos="fade-down">
+          We collaborate with a network of trusted banks to offer you the best possible financing options for your
+          project. Whether you're building your dream home, expanding your business, or investing in infrastructure, our
+          banking partners can provide you with competitive rates, flexible terms, and expert guidance.
+        </p>
+        <div class="icon">
+          <img src="./Image/icon (2).png" alt="" class="px-5" loading="lazy">
+          <img src="./Image/icon (1).png" alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer style="background: #3a3081;">
+    <div class="row mx-auto container py-5">
+      <div class="col-lg-4 col-md-4 col-12 py-3">
+        <div class="logoforFooter">
+          <img src="./Image/logo.png" alt="" loading="lazy">
+          <p class="text-light py-4 w-75" data-aos="fade-left">
+            We are a team of passionate and dedicated professionals, committed to delivering the highest quality of
+            service and workmanship to our clients.
+          </p>
+          <div class="social-icons">
+            <img src="./Image/iconforfooter (1).png" alt="" class="pe-3" loading="lazy">
+            <img src="./Image/iconforfooter (2).png" alt="" class="pe-3" loading="lazy">
+            <img src="./Image/iconforfooter (3).png" alt="" class="pe-3" loading="lazy">
+            <img src="./Image/iconforfooter (4).png" alt="" class="pe-3" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12 py-3">
+        <div class="footerHeading">
+          <h3 class="text-light">Quick Links</h3>
+          <ul class="navbar-nav text-light py-3 ps-3">
+            <li class="nav-item"><a href="" class="nav-link" data-aos="fade-left">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link" data-aos="fade-left">About Us</a></li>
+            <li class="nav-item"><a href="" class="nav-link" data-aos="fade-left">Amenities</a></li>
+            <li class="nav-item"><a href="" class="nav-link" data-aos="fade-left">Projects</a></li>
+            <li class="nav-item"><a href="" class="nav-link" data-aos="fade-left">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12 py-3">
+        <div class="footerHeading text-light">
+          <h3 class="text-light">Reach us</h3>
+          <div class="py-3" data-aos="fade-down">
+            <p data-aos="fade-up">+91 98419 21582 / +91 98410 21582</p>
+            <p data-aos="fade-up">044-35775510</p>
+            <p data-aos="fade-up" class="w-75">No 20, V.O.C Street, West Tambaram, Chennai - 600 045</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function getSamePageAnchor(link) {
+      if (
+        link.protocol !== window.location.protocol ||
+        link.host !== window.location.host ||
+        link.pathname !== window.location.pathname ||
+        link.search !== window.location.search
+      ) {
+        return false;
+      }
+
+      return link.hash;
+    }
+
+    // Scroll to a given hash, preventing the event given if there is one
+    function scrollToHash(hash, e) {
+      const elem = hash ? document.querySelector(hash) : false;
+      if (elem) {
+        if (e) e.preventDefault();
+        gsap.to(window, { scrollTo: elem });
+      }
+    }
+
+    // If a link's href is within the current page, scroll to it instead
+    document.querySelectorAll('a[href]').forEach(a => {
+      a.addEventListener('click', e => {
+        scrollToHash(getSamePageAnchor(a), e);
+      });
+    });
+
+    // Scroll to the element in the URL's hash on load
+    scrollToHash(window.location.hash);
+  </script>
+</body>
+
+</html>
